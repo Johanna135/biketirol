@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Bike Trail Tirol Beispiel</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    <!-- Leaflet Providers -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.13.0/leaflet-providers.min.js" integrity="sha512-5EYsvqNbFZ8HX60keFbe56Wr0Mq5J1RrA0KdVcfGDhnjnzIRsDrT/S3cxdzpVN2NGxAB9omgqnlh4/06TvWCMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Leaflet FullScreen -->
+    <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+
+    <!-- eigene Stile und Hauptskript -->
+    <link rel="stylesheet" href="main.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h2><i class="fa-solid fa-person-biking"></i> Bike Trail Tirol Beispiel</h2>
+            <nav>
+                <i class="fab fa-github"></i> <a href="https://github.com/webmapping/biketirol">Github</a>
+            </nav>
+        </header>
+        <article>
+            <h1><a href=""></a>todo:Titel eurer Etappe (z.B. Etappe 7: Scharnitz - Achensee)</h1>
+            <p>todo:Intro-Text eurer Etappenseite</p>
+
+            <div class="summary">
+                <div class="summary-badge">
+                    <i class="fas fa-walking"></i> todo:Länge km
+                </div>
+                <div class="summary-badge">
+                    <i class="fas fa-clock"></i> todo:Fahrzeit h
+                </div>
+                <div class="summary-badge">
+                    <i class="fas fa-sort-amount-up-alt"></i> todo:bergauf m
+                </div>
+                <div class="summary-badge">
+                    <i class="fas fa-mountain"></i> todo:höchster Punkt m
+                </div>
+                <div class="summary-badge">
+                    <i class="fas fa-sort-amount-down-alt"></i> todo:bergab m
+                </div>
+                <div class="summary-badge">
+                    <i class="fa-solid fa-heart-pulse"></i> todo:Schwierigkeit
+                </div>
+                <div class="summary-badge">
+                    <i class="fas fa-download"></i> todo:Link GPX mit Label "Download GPX"
+                </div>
+            </div>
+
+            <div id="map"></div>
+
+            <h3>Streckenbeschreibung</h3>
+            <p>todo:Streckenbeschreibung eurer Etappenseite</p>
+
+        </article>
+        <footer>
+            <strong>Datenquellen:</strong>
+            <nav>
+                <a href="https://www.tirol.at/reisefuehrer/sport/mountainbiken/bike-trail-tirol">Bike Trail Tirol (Online Reiseführer Tirol)</a> |
+                todo:Link auf die Etappenseite eurer Etappe mit dem Linktext wie beim todo:Titel ganz oben |
+                <a href="https://www.data.gv.at/katalog/de/dataset/land-tirol_elektronischekartetirol">eGrundkarte Tirol</a>
+            </nav>
+        </footer>
+    </main>
+</body>
+
+</html>
