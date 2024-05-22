@@ -64,4 +64,5 @@ footer nav {
     border: 1px solid silver;
     border-radius: 10px;
     margin-right: 0.5em;
+    background-color: rgba(30, 61, 30, 0.6);
 }
