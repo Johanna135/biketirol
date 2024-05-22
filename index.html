@@ -9,18 +9,25 @@
     <title>Bike Trail Tirol Beispiel</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- Leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+        integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+        integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
 
     <!-- Leaflet Providers -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.13.0/leaflet-providers.min.js" integrity="sha512-5EYsvqNbFZ8HX60keFbe56Wr0Mq5J1RrA0KdVcfGDhnjnzIRsDrT/S3cxdzpVN2NGxAB9omgqnlh4/06TvWCMw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-providers/1.13.0/leaflet-providers.min.js"
+        integrity="sha512-5EYsvqNbFZ8HX60keFbe56Wr0Mq5J1RrA0KdVcfGDhnjnzIRsDrT/S3cxdzpVN2NGxAB9omgqnlh4/06TvWCMw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Leaflet FullScreen -->
     <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/Leaflet.fullscreen.min.js'></script>
-    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/leaflet.fullscreen.css'
+        rel='stylesheet' />
 
     <!-- eigene Stile und Hauptskript -->
     <link rel="stylesheet" href="main.css">
@@ -30,51 +37,65 @@
 <body>
     <main>
         <header>
-            <h2><i class="fa-solid fa-person-biking"></i> Bike Trail Tirol Beispiel</h2>
+            <h2><i class="fa-solid fa-person-biking"></i> Bike Trail Tirol</h2>
             <nav>
-                <i class="fab fa-github"></i> <a href="https://github.com/webmapping/biketirol">Github</a>
+                <i class="fab fa-github"></i> <a href="https://github.com/Johanna135/biketirol">Github</a>
             </nav>
         </header>
         <article>
-            <h1><a href=""></a>todo:Titel eurer Etappe (z.B. Etappe 7: Scharnitz - Achensee)</h1>
-            <p>todo:Intro-Text eurer Etappenseite</p>
+            <h1><a href=""></a>Bike Trail Tirol Etappe 23: Mieders - Mutters</h1>
+            <p>Genügend Zeit zum Aufwärmen haben Sie auf dieser 20 Kilometer langen Strecke, denn die ersten Kilometer
+                führen erst einmal abwärts, ehe der Anstieg erfolgt. Kondition ist für die Auffahrt zur Raitiser Alm
+                nötig. Von dort aus geht es aber nahezu eben zur Mutterer Alm und weiter talwärts nach Mutters.</p>
 
             <div class="summary">
                 <div class="summary-badge">
-                    <i class="fas fa-walking"></i> todo:Länge km
+                    <i class="fas fa-walking"></i> 20 km
                 </div>
                 <div class="summary-badge">
-                    <i class="fas fa-clock"></i> todo:Fahrzeit h
+                    <i class="fas fa-clock"></i> 3h 30min
                 </div>
                 <div class="summary-badge">
-                    <i class="fas fa-sort-amount-up-alt"></i> todo:bergauf m
+                    <i class="fas fa-sort-amount-up-alt"></i> 900m bergauf
                 </div>
                 <div class="summary-badge">
-                    <i class="fas fa-mountain"></i> todo:höchster Punkt m
+                    <i class="fas fa-mountain"></i> höchster Punkt: 1630m
                 </div>
                 <div class="summary-badge">
-                    <i class="fas fa-sort-amount-down-alt"></i> todo:bergab m
+                    <i class="fas fa-sort-amount-down-alt"></i> 1030m bergab
                 </div>
                 <div class="summary-badge">
-                    <i class="fa-solid fa-heart-pulse"></i> todo:Schwierigkeit
+                    <i class="fa-solid fa-heart-pulse"></i> Schwierigkeit: mittelschwierig
                 </div>
                 <div class="summary-badge">
-                    <i class="fas fa-download"></i> todo:Link GPX mit Label "Download GPX"
+                    <i class="fas fa-download"></i> <a href="data/etappe23.gpx"> Download GPX</a>
                 </div>
             </div>
 
             <div id="map"></div>
 
             <h3>Streckenbeschreibung</h3>
-            <p>todo:Streckenbeschreibung eurer Etappenseite</p>
+            <p>Zunächst begibt man sich auf der Straße etwa 600 Meter taleinwärts. Bei der ersten größeren Kreuzung
+                fährt man Richtung Innsbruck/Telfes und unterquert die Bundesstraße. Immer geradeaus abwärts geht es bis
+                zur Ruetz, dem Bach durchs Stubaital. Nach der Brücke zweigt man rechts ab (563) und fährt talauswärts
+                durch Wiesen. Die Schilder „563 Telfer Wiesen Tour“ führen den Biker in Folge etwas ansteigend bis zu
+                den Bahngleisen der Stubaitalbahn. Dort zweigt man rechts ab und radelt entlang der Telfer Wiesen bis
+                nach Kreith (1h ab Mieders). Vor den ersten Häusern radelt man im spitzen Winkel links auf dem Fahrweg
+                zur Kreither Alm (511) hinauf. Kurz vor der Kreither Alm auf ca. 1450m Seehöhe zweigt man rechts auf den
+                „Almenweg“ ab. Nun radelt man vorbei an der Raitiser Alm weiter zur Mutterer Alm (510) (2h ab Kreith).
+                Hier beginnt die Abfahrt über mehrere Kehren hinunter nach Mutters (30min ab der Mutterer Alm).</p>
 
         </article>
         <footer>
             <strong>Datenquellen:</strong>
             <nav>
-                <a href="https://www.tirol.at/reisefuehrer/sport/mountainbiken/bike-trail-tirol">Bike Trail Tirol (Online Reiseführer Tirol)</a> |
-                todo:Link auf die Etappenseite eurer Etappe mit dem Linktext wie beim todo:Titel ganz oben |
-                <a href="https://www.data.gv.at/katalog/de/dataset/land-tirol_elektronischekartetirol">eGrundkarte Tirol</a>
+                <a href="https://www.tirol.at/reisefuehrer/sport/mountainbiken/bike-trail-tirol">Bike Trail Tirol
+                    (Online Reiseführer Tirol)</a> |
+                <a
+                    href="https://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-mieders-mutters">
+                    Etappe 23: Mieders - Mutters</a> |
+                <a href="https://www.data.gv.at/katalog/de/dataset/land-tirol_elektronischekartetirol">eGrundkarte
+                    Tirol</a>
             </nav>
         </footer>
     </main>
