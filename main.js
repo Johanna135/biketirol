@@ -66,4 +66,8 @@ let controlElevation = L.control.elevation({
 }).addTo(map); // Plugin initialisieren mit leerem Objekt //add to themalayer und der themalayer wird zur map hinzugefügt
 controlElevation.load("data/etappe23.gpx")
 
-console.log(ETAPPEN);
+let pulldown = document.querySelector("#pulldown");
+
+for (let etappe of ETAPPEN) {
+    pulldown.innerHTML += `<option value="${etappe.user}">${etappe.titel}</option>`;
+}
