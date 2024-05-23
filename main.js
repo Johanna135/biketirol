@@ -11,6 +11,8 @@ let map = L.map("map", {
     fullscreenControl: true
 }).setView([ibk.lat, ibk.lng], 9);
 
+
+
 // thematische Layer
 let themaLayer = {
     route: L.featureGroup(),
@@ -57,6 +59,9 @@ L.control.layers({
 L.control.scale({
     imperial: false,
 }).addTo(map);
+
+var osm2 = new L.TileLayer(osmUrl, { minZoom: 0, maxZoom: 13, attribution: osmAttrib });
+var miniMap = new L.Control.MiniMap(osm2).addTo(map);
 
 let controlElevation = L.control.elevation({
     time: false,
