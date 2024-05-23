@@ -65,3 +65,5 @@ let controlElevation = L.control.elevation({
     theme: "bike-tirol",
 }).addTo(map); // Plugin initialisieren mit leerem Objekt //add to themalayer und der themalayer wird zur map hinzugefügt
 controlElevation.load("data/etappe23.gpx")
+
+console.log(ETAPPEN);
