@@ -57,3 +57,10 @@ L.control.layers({
 L.control.scale({
     imperial: false,
 }).addTo(map);
+
+let controlElevation = L.control.elevation({
+    time: false,
+    elevationDiv: "#profile",
+    height: 150,
+}).addTo(map); // Plugin initialisieren mit leerem Objekt //add to themalayer und der themalayer wird zur map hinzugefügt
+controlElevation.load("data/etappe23.gpx")
